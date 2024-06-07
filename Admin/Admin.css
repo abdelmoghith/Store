@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  width: 18%;
+  height: 100%;
+  box-shadow: 0px 0px 10px #999;
+  z-index: 1000;
+}
+.right {
+  width: 82%;
+  height: 100%;
+  /* background-color: rgba(0, 128, 0, 0.338); */
+}
+
+.navbar {
+  width: 100%;
+  padding: 20px;
+  height: 75px;
+  background-color: #eeeeee6a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar input {
+  padding: 10px 30px 10px 20px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.logo {
+  background-color: #777;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0px auto;
+  background-image: url(depositphotos_315985576-stock-illustration-headphone-icon-vector-music-icon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+}
+.icons a div,
+.icons > div {
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  width: 100%;
+  padding: 15px 50px;
+  border-radius: 20px;
+  transition: 0.2s ease;
+}
+.icons a {
+  text-decoration: none;
+  color: inherit;
+}
+.icons div:hover {
+  background-color: #eeeeeed5;
+  cursor: pointer;
+}
+#active {
+  background-color: #eeeeeed5;
+}
+.icons div i {
+  font-size: 20px;
+  margin-right: 25px;
+}
+
+.icons a:last-child {
+  margin-top: 0px;
+}
+
+.new {
+  position: relative;
+}
+.new i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  /* height: 250px; */
+  padding: 10px;
+}
+.gridx {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 20px;
+  height: auto;
+  padding: 10px;
+}
+
+.grid-left {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 10px;
+ 
+}
+
+.grid-leftx {
+  grid-column: span 2;
+  overflow-y: scroll;
+  height: 375px;
+  scrollbar-width: 1px;
+  scrollbar-width: thin;  /* Makes the scrollbar thin */
+  scrollbar-color: #888 #f1f1f1;  
+}
+
+.grid-right{
+  overflow-y: scroll;
+  height: 375px;
+  scrollbar-width: 1px;
+  scrollbar-width: thin;  /* Makes the scrollbar thin */
+  scrollbar-color: #888 #f1f1f1;  
+}
+
+.grid-leftx h3,
+.grid-right h3 {
+  margin: 20px 10px;
+}
+
+.grid-right,
+.grid-right-x,
+.grid-leftx,
+.grid-left div {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contain {
+  width: 100%;
+  height: calc(100vh - 75px);
+  overflow-y: scroll;
+}
+
+.grid-left div {
+  padding: 10px;
+  text-align: center;
+}
+.grid-left div p:first-of-type {
+  font-size: 17px;
+  color: #999;
+}
+.grid-left div p:last-of-type {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 7px auto;
+}
+.grid-left div > i {
+  font-size: 25px;
+  margin: 0px 0px 10px 5px;
+}
+.grid-left div a {
+  margin-top: 55px;
+  color: #999;
+  text-decoration: none;
+}
+
+.grid {
+  margin-bottom: 5px;
+}
+
+#img1,
+#img2,
+#img3,
+#img4 {
+  margin-bottom: 10px;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  margin: auto;
+}
+
+#img1 {
+  background-image: url(people.png);
+}
+#img2 {
+  background-image: url(line-chart.png);
+}
+#img3 {
+  background-image: url(remove.png);
+}
+#img4 {
+  background-image: url(box.png);
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  background-color: #eeeeee6a;
+  font-weight: bold;
+}
+table td {
+  color: #333;
+  padding: 20px;
+}
+
+.Product,
+.Product_1 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.Product {
+  background-image: url(/WebSite/Surveillance.jpg);
+}
+.Product_1 {
+  background-image: url(/WebSite/smart-watch.jpg);
+}
+
+.grid-right-x {
+  background-image: url(bar-line-graph.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.just {
+  display: block;
+}
+.just div {
+  position: relative;
+}
+
+.list {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Transition effect for opacity */
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+.list.show {
+  display: block; 
+  opacity: 1;
+  height: auto;
+}
+.list ul {
+  list-style: none;
+}
+.list ul li {
+  margin: 30px auto;
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+.list ul a li  {
+display: flex;
+}
+.list ul li:hover {
+  background-color: #1a0d0d16;
+  
+}
+
+.fa-chevron-down {
+  color: rgba(0, 0, 0, 0.657);
+  position: absolute;
+  right: -40px;
+  font-size: 5px;
+  display: none;
+}
+
+.just:hover .fa-chevron-down {
+  display: block;
+}
+
+#act{
+  background-color: #1a0d0d16;
+
+}
